@@ -1,0 +1,59 @@
+.about_container{
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 25% 80%;
+    gap: 5%;
+}
+.about-me{
+    width: 18rem;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    background: linear-gradient(45deg,transparent,var(--color-primary),transparent);
+    display: grid;
+    place-items: center;
+}
+.about_me-image{
+    border-radius: 2rem;
+    height: 18rem;
+    width: 18rem;
+    cursor: pointer ;
+    overflow: hidden;
+    transform: rotate(10deg);
+    transition: var(--transition);
+}
+.about_me-image:hover{
+      
+      transform: rotate(0deg);
+}
+@media screen and (max-width:1024px)  {
+   .about_container{
+    grid-template-columns: 1fr;
+    gap: 0;
+
+   }
+   .about-me{
+    width: 50%;
+    margin: 2rem auto 4rem;
+   }
+   .about-content p{
+    margin: 1rem 0 1.5rem;
+   }
+}
+
+@media screen and (max-width:600px)  {
+  .about-me{
+    width: 75%;
+    height: 75%;
+    margin: 0 auto 3rem;
+  }
+  .about_cards{
+    grid-template-columns: 1fr;
+    gap:1rem;
+  }
+  .about_content{
+    text-align: center;
+  }
+  .about-content p{
+    margin: 1.5rem 0 ;
+  }
+}
