@@ -1,8 +1,7 @@
 import React from "react";
 import "./contact.css";
 import {MdOutlineAttachEmail} from "react-icons/md";
-import {AiFillMessage} from "react-icons/ai";
-import { FaDiscord,FaLinkedin  } from "react-icons/fa";
+import { FaLinkedin  } from "react-icons/fa";
 import{ useRef } from 'react';
 import emailjs from 'emailjs-com';
 const Contact = () => {

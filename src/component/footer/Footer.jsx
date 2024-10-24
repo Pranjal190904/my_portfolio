@@ -2,8 +2,7 @@ import React from "react";
 import "./footer.css";
 import {
   AiFillFacebook,
-  AiFillInstagram,
-  AiFillTwitterCircle,
+  AiFillInstagram
 } from "react-icons/ai";
 const Footer = () => {
   return (
